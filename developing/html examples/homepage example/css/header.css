@@ -1,0 +1,85 @@
+/**
+    * Header styling
+    *
+    * @authpr: Francesco Chemello
+    * @version: 1.0
+    * @since: 1.0
+*/
+
+/* Display */
+
+.container{
+    width: 100%;
+    display: flex;
+    border: 5px solid orange;
+}
+
+.header-brand{
+    width: 100%;
+    display: flex;
+    border: 5px solid gray;
+    flex: 3;
+}
+
+.img-brand{
+    width: 20%;
+    height: auto;
+    aspect-ratio: 1/1;
+    max-width: 100px;
+    float: left;
+    border: 5px solid green;
+    margin-right: 2%;
+}
+
+.navbar-collapse{
+    display: flex;
+    border: 5px solid pink;
+    flex: 1;
+}
+
+.navbar-brand{
+    width: 100%;
+    float: left;
+    text-align: left;
+    text-decoration: underline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 5px solid blue;
+}
+
+.navbar-nav{
+    list-style: none;
+    float: right;
+    margin-left: auto;
+    margin-right: 8%;
+    text-align: right;
+}
+
+/* Style */
+/*TODO*/
+
+/* Media Query */
+
+@media screen and (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+    
+    .img-brand{
+        height: 80px;
+        width: 80px;
+    }
+    
+    .navbar-collapse ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+        list-style: none;
+    }
+    
+    .navbar-collapse ul li{
+        flex: 0 0 auto;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+}

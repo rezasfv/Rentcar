@@ -1,0 +1,158 @@
+/**
+    * Home page styling
+    *
+    * @authpr: Francesco Chemello
+    * @version: 1.0
+    * @since: 1.0
+*/
+
+/* Display & Style */
+
+body{
+  display: flex;
+  flex-direction: column;
+    width: 100%;
+    min-height: 100vh !important;
+    color:#2B2B2B;
+    text-align:left;
+    background-color:#FBFBFB;
+}
+  
+.maincontent{
+  flex: 1;
+}
+
+.company-name > h1{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    color: #2B2B2B;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+  
+.top_rented_text{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #2B2B2B;
+    margin-bottom: 10px;
+}
+
+#top_rented{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-right: 2% !important;
+  padding-left: 2% !important;
+}
+
+.col-sm-3{
+  min-width: 350px !important;
+}
+
+.card-body{
+  box-shadow: 2px 2px 5px 0px #2B2B2B61;
+  background-color: #FBFBFB;
+}
+
+.list-group-item{
+  background-color: #FBFBFB;
+  border: none;
+}
+
+.card-img-top{
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  box-shadow: 2px 0px 5px 0px #2B2B2B61;
+}
+
+.btn-primary{
+  background-color: #476C9B;
+  color: #FBFBFB;
+  font-weight: bold;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px 0px #2B2B2B61;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus{
+  background-color: #537A5A;
+  font-weight: bold;
+  border-color: #537A5A;
+  transition: 500ms;
+}
+
+#search-btn{
+  background-color: #476C9B;
+  color: #FBFBFB;
+  font-weight: bold;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px 0px #2B2B2B61;
+  padding: 1em 2em !important;
+}
+
+#search-btn:hover, #search-btn:active, #search-btn:focus{
+  background-color: #537A5A;
+  font-weight: bold;
+  border-color: #537A5A;
+  transition: 500ms;
+}
+  
+  /* Media Query */
+  
+@media screen and (max-width: 768px){
+    .maincontent{
+      display: flex;
+      flex-direction: column;
+    }
+
+    #top_rented{
+      display: flex;
+      flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 950px) and (orientation: landscape){
+  .maincontent{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-sm-3{
+      min-width: 330px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) and (orientation: landscape){
+  body #top_rented{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+  }
+  
+  .col-sm-3 .p-2{
+      flex: 0 0 auto;
+      width: 65% !important;
+  }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 1025px) and (orientation: portrait) {
+  body #results{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+  }
+
+  .col-sm-3 .p-2{
+      flex: 0 0 auto;
+      width: 65%;
+      max-width: 400px;
+  }
+}

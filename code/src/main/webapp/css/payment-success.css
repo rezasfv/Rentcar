@@ -1,0 +1,25 @@
+/*
+    Author: Francesco Chemello
+    Version: 1.0
+    Since: 1.0
+
+    This file contains the css code for the reserve.jsp page
+*/
+
+/* Display & Style */
+
+body{
+    width: 100%;
+    min-height: 100vh !important;
+    color:#2B2B2B;
+    background-color:#FBFBFB;
+}
+
+.my-5 > h4{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #2B2B2B;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}

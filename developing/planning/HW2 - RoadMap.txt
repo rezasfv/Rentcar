@@ -1,0 +1,20 @@
+<!-- BEFORE STARTING -->
+
+1. Ask to the professor if we should change the ER schema because is too simple or if we can go on to the HW2 without
+	any changes.
+2. Ask to the professor what are "filters" (missing in HW1).
+3. Download Ajax.
+4. Compleate the draft in Balsamiq.
+5. Check if the file Docker works (already inside the code folder).
+6. Check how we can modify the access to the database due to "bad to use the root postgresql user to connect to the
+	database".
+ 
+<!-- STYLE -->
+
+1. Find templates for our project (Gabriella can do that).
+2. See the useful websites for color gradient, fonts and icons (links in "Lesson 6" of tutorship).
+
+	-> everything can be upload it inside the folder "../developing/HTML style"!
+
+
+Last update: 14-05-2024

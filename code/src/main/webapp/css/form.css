@@ -1,0 +1,76 @@
+/*
+    Author: Francesco Chemello
+    Version: 1.0
+    Since: 1.0
+
+    CSS for the forms of the application 
+*/
+
+/* Display and Style */
+
+body{
+    display: flex;
+    flex-direction: column;
+      width: 100%;
+      min-height: 100vh !important;
+      color:#212529;
+      text-align:left;
+      background-color:#FBFBFB;
+}
+
+.mainbox{
+    flex: 1;
+    margin-bottom: 3%;
+}
+
+.mainbox > h2{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    color: #2B2B2B;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.form-group > label{
+    color: #2B2B2B;
+    font-weight: bold;   
+}
+
+.form-control, .mb-3{
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.form-control:focus, .mb-3:focus{
+    background-color: transparent;
+    border-color: #2B2B2B;
+    box-shadow: 2px 2px 5px 0px #2B2B2B61;
+}
+
+.btn.btn-primary{
+    background-color: transparent;
+    color: #2B2B2B;
+    font-weight: bold;
+    border-radius: 20px;
+    border-color: #2B2B2B;
+    box-shadow: 2px 2px 5px 0px #2B2B2B61;
+    padding: 10px 20px;
+}
+
+.btn.btn-secondary{
+    background-color: transparent;
+    color: #2B2B2B;
+    border-radius: 20px;
+    border-color: #2B2B2B;
+    box-shadow: 2px 2px 5px 0px #2B2B2B61;
+    padding: 10px 20px;
+}
+
+.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
+    background-color: #537A5A;
+    border-color: #537A5A;
+    color: #FBFBFB;
+    font-weight: bold;
+    transition: 500ms;
+}

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+        xmlns="https://jakarta.ee/xml/ns/jakartaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+        version="6.0">
+
+    <display-name>rentCar</display-name>
+
+
+    <welcome-file-list>
+        <welcome-file>/jsp/home.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>SeeAllCarsServlet</servlet-name>
+        <servlet-class>servlet.SeeAllCarsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SeeAllCarsServlet</servlet-name>
+        <url-pattern>/seeallcars</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>CreateCustomer</servlet-name>
+        <url-pattern>/create-customer</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CreateCustomer</servlet-name>
+        <servlet-class>servlet.RegistrationServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>GalleryServlet</servlet-name>
+        <servlet-class>servlets.GalleryServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>GalleryServlet</servlet-name>
+        <url-pattern>/gallery</url-pattern>
+    </servlet-mapping>
+
+<!--    <servlet>-->
+<!--        <servlet-name>EditCustomer</servlet-name>-->
+<!--        <servlet-class>servlet.UpdateCustomerServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>EditCustomer</servlet-name>-->
+<!--        <url-pattern>/edit-customer</url-pattern>-->
+<!--    </servlet-mapping>-->
+
+    <servlet>
+        <servlet-name>Createlicense</servlet-name>
+        <servlet-class>servlet.CreateLicenseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Createlicense</servlet-name>
+        <url-pattern>/create-licence</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DashboardServlet</servlet-name>
+        <servlet-class>servlet.DashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DashboardServlet</servlet-name>
+        <url-pattern>/dashboard</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateCarServlet</servlet-name>
+        <servlet-class>servlet.CreateCarServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateCarServlet</servlet-name>
+        <url-pattern>/create-car</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateCarServlet</servlet-name>
+        <servlet-class>servlet.UpdateCarServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateCarServlet</servlet-name>
+        <url-pattern>/update-car</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>EditLicenseServlet</servlet-name>
+        <servlet-class>servlet.UpdateLicenseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditLicenseServlet</servlet-name>
+        <url-pattern>/edit-license</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateCustomerServlet</servlet-name>
+        <servlet-class>servlet.UpdateCustomerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateCustomerServlet</servlet-name>
+        <url-pattern>/edit-customer</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>TopRentedManagerServlet</servlet-name>
+        <servlet-class>servlet.TopRentedManagerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TopRentedManagerServlet</servlet-name>
+        <url-pattern>/rests/toprentedcars</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RestManagerServlet</servlet-name>
+        <servlet-class>servlet.RestDispatcherServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RestManagerServlet</servlet-name>
+        <url-pattern>/rest/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SearchServlet</servlet-name>
+        <servlet-class>servlet.SearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchServlet</servlet-name>
+        <url-pattern>/search-car</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddRentalTransactionServlet</servlet-name>
+        <servlet-class>servlet.AddRentalTransactionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddRentalTransactionServlet</servlet-name>
+        <url-pattern>/add-transaction</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SelectCarServlet</servlet-name>
+        <servlet-class>servlet.SelectCarServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SelectCarServlet</servlet-name>
+        <url-pattern>/select-car</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PaymentServlet</servlet-name>
+        <servlet-class>servlet.PaymentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PaymentServlet</servlet-name>
+        <url-pattern>/create-payment-intent</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PaymentSuccessServlet</servlet-name>
+        <servlet-class>servlet.PaymentSuccessServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PaymentSuccessServlet</servlet-name>
+        <url-pattern>/payment-success</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CheckAvailabilityServlet</servlet-name>
+        <servlet-class>servlet.CheckAvailabilityServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckAvailabilityServlet</servlet-name>
+        <url-pattern>/check-availability</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ReservationServlet</servlet-name>
+        <servlet-class>servlet.ReservationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReservationServlet</servlet-name>
+        <url-pattern>/reserve</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RemoveRentalTransactionServlet</servlet-name>
+        <servlet-class>servlet.RemoveRentalTransactionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RemoveRentalTransactionServlet</servlet-name>
+        <url-pattern>/remove-transaction</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateRentalTransactionServlet</servlet-name>
+        <servlet-class>servlet.UpdateRentalTransactionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateRentalTransactionServlet</servlet-name>
+        <url-pattern>/update-transaction</url-pattern>
+    </servlet-mapping>
+
+     <servlet>
+        <servlet-name>LoginAdminServlet</servlet-name>
+        <servlet-class>servlet.LoginAdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginAdminServlet</servlet-name>
+        <url-pattern>/adminLogin</url-pattern>
+    </servlet-mapping>
+
+    <resource-ref>
+        <description>Connection pool to the database</description>
+        <res-ref-name>jdbc/employee-ferro</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+    </resource-ref>
+
+</web-app>
+

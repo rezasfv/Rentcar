@@ -1,0 +1,112 @@
+/**
+    * Footer styling
+    *
+    * @authpr: Francesco Chemello
+    * @version: 1.0
+    * @since: 1.0
+*/
+
+/* Display & Style */
+
+.footer{
+    color: #FBFBFB;
+    background-color: #476C9B;
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+}
+
+.footer-container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #476C9B;
+    color: #FBFBFB;
+}
+
+.footer-message{
+    text-align: center;
+}
+
+.footer__text {
+    text-align: center;
+    order: 1;
+    margin-left: auto;
+    margin-right: auto;
+    color: #FBFBFB;
+}
+
+.footer__map__text {
+    text-align: center;
+    order: 1;
+    margin-left: auto;
+    margin-right: auto;
+    color: #FBFBFB;
+}
+
+.footer__sitemap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__item{
+    width: 100%;
+}
+
+.footer__item ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer__item ul li {
+    flex: 0 0 auto;
+    margin-left: 4%;
+    margin-right: 4%;
+    color: #FBFBFB;
+}
+
+.footer div li{
+    color: #FBFBFB !important;
+}
+
+.footer div li :hover{
+    color: #FBFBFB !important;
+    text-decoration: underline !important;
+}
+
+.footer__item a{
+    color: #FBFBFB !important;
+}
+
+.footer__item a :hover{
+    color: #FBFBFB !important;
+    text-decoration: underline !important;
+}
+
+.footer__sitemap a {
+    flex: 0 0 auto;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width: 768px){
+    .footer__item ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }   
+
+    .footer__item ul li {
+        width: 50%;
+    }
+    
+}

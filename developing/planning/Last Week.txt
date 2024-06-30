@@ -1,0 +1,9 @@
+<!-- PLANNING -->
+
+- REST implementation of an entity that has at least ADD and REMOVE -> CAR!
+- Add costraint checks in servlets 
+- Database functions
+- On update cascade and on delete cascade (something like that)
+- Add Admin and manage relation
+- Write into the repo that Card is not integreated into the database yet because there are some problems about
+	user ownership!

@@ -1,0 +1,141 @@
+/*
+    Author: Francesco Chemello
+    Version: 1.0
+    Since: 1.0
+*/
+
+/* Display and Style */
+
+body {
+    width: 100%;
+    min-height: 100vh !important;
+    color:#212529;
+    text-align:left;
+    background-color:#FBFBFB;
+    margin: 0;
+    padding: 0;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tab-link {
+    border: 1px solid #2B2B2B;
+    color: #2B2B2B;
+    background-color: #FBFBFB;
+    border: 1px solid #2B2B2B;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 10px;
+    flex: 1 0 auto;
+    }    
+
+.tabs > .tab-link.active{
+    background-color: #2B2B2B !important; /* Change the color to indicate active tab */
+    color: #FBFBFB !important;
+}
+
+.tab-link:hover{
+    background-color: #2B2B2B;
+    color: #FBFBFB;
+    transition: 500ms;
+}
+
+.tab-content {
+    padding: 20px;
+    background-color: #FBFBFB;
+    border-radius: 0 8px 8px 8px;
+    box-shadow: 0 0 5px #2B2B2B61;
+    display: none;
+}
+
+.section{
+    margin-bottom: 30px;
+}
+
+.section > h2{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    color: #2B2B2B;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.btn.btn-primary{
+    background-color: transparent;
+    color: #2B2B2B;
+    font-weight: bold;
+    border-radius: 20px;
+    border-color: #2B2B2B;
+    box-shadow: 2px 2px 5px 0px #2B2B2B61;
+    padding: 10px 20px;
+}
+
+.btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus{
+    background-color: #537A5A;
+    border-color: #537A5A;
+    color: #FBFBFB;
+    font-weight: bold;
+    transition: 500ms;
+}
+
+@media screen and (min-width: 600px) {
+    .tab-link {
+        flex-basis: auto;
+        margin-bottom: 0;
+    }
+
+    .tab-content {
+        display: block;
+    }
+}
+
+
+
+/*
+
+.mainbox{
+    flex: 1;
+    margin-bottom: 3%;
+}
+
+.mainbox > h2{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    color: #2B2B2B;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.form-group > label{
+    color: #2B2B2B;
+    font-weight: bold;   
+}
+
+.form-control{
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.form-control:focus{
+    background-color: transparent;
+    border-color: #2B2B2B;
+    box-shadow: 2px 2px 5px 0px #2B2B2B61;
+}
+
+.btn.btn-secondary{
+    background-color: transparent;
+    color: #2B2B2B;
+    border-radius: 20px;
+    border-color: #2B2B2B;
+    box-shadow: 2px 2px 5px 0px #2B2B2B61;
+    padding: 10px 20px;
+}
+
+*/

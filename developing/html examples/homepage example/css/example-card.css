@@ -1,0 +1,90 @@
+.card-example{
+    border-radius: 30px;
+    background-color: #f8f9fa;
+    padding: 3%;
+    border: 5px solid black;
+}
+
+.car-col{
+    display: flex;
+    border: 5px solid pink;
+    box-sizing: border-box;
+}
+
+.card-content{
+    flex: 0 0 40%;
+    float: left;
+    border: 5px solid red;
+    box-sizing: border-box;
+}
+
+.car-name{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.car-info{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.car-img{
+    flex: 0 0 60%;
+    width: 100%;
+    height: auto;
+    float: left;
+    border: 5px solid green;
+    box-sizing: border-box;
+}
+
+.car-photos{
+    width: 85%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.car-info{
+    font-size: 20px;
+    border: 5px solid yellow;
+}
+
+.button-rent{
+    clear: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid blue;
+}
+
+.btn-rent{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: burlywood;
+    font-size: auto;
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+
+@media screen and (max-width: 768px){
+    .car-col{
+        flex-direction: column;
+    }
+
+    .car-content{
+        flex: 0 0 100%;
+    }
+
+    .car-img{
+        flex: 0 0 100%;
+    }
+    
+}

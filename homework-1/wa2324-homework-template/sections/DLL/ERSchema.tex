@@ -1,0 +1,52 @@
+\subsection{Entity-Relationship Schema}
+\begin{center}
+
+\includegraphics[width=11cm, height=10cm]{ERSchema.png}
+
+\end{center}
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|c|c|p{4cm}|}
+    \hline
+    \textbf{Entity} & \textbf{Attributes} & \textbf{Description} \\
+    \hline
+    Customer & Customer\_ID & Identifier for the customer \\
+             & First Name & First name of the customer \\
+             & Last Name & Last name of the customer \\
+             & Email & Email address of the customer \\
+             & Date of Birth & Birth date of the customer \\
+             & Phone & Phone number of the customer \\
+             & Password & Password for customer login \\
+             & Nationality & Nationality of the customer \\
+             & Address & Address of the customer \\
+    \hline
+    License & License\_number & Identifier for the license \\
+            & Issuing\_date & Date of issuing the license \\
+    \hline
+    Car & Car\_ID & Identifier for the car \\
+        & BrandName & Brand name of the car \\
+        & ModelName & Model name of the car \\
+        & Capacity & Capacity of the car \\
+        & CurrentStatus & Current status of the car \\
+        & Category & Category of the car \\
+    \hline
+    Rental Transaction & Payment\_ID & Identifier for the payment \\
+                       & From\_date & Start date of rental \\
+                       & To\_date & End date of rental \\
+                       & Amount & Rental amount \\
+                       & Payment\_status & Status of payment \\
+    \hline
+    Admin & Admin\_ID & Identifier for the admin \\
+          & Type\_accept & Acceptance type \\
+          & B1 & B1 code \\
+          & Expiration\_date & Expiration date of license \\
+          & E-mail & Email address of the admin \\
+    \hline
+    \end{tabular}
+    \caption{Entity-Attribute-Description Table for ER Schema}
+    \label{tab:er-schema}
+\end{table}
+
+
+
+

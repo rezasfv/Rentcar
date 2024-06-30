@@ -1,0 +1,110 @@
+/**
+    * Header styling
+    *
+    * @authpr: Francesco Chemello
+    * @version: 1.0
+    * @since: 1.0
+*/
+
+/* Display & Style */
+
+.header{
+    color: #2B2B2B;
+}
+
+.header div ul li{
+    color: #2B2B2B !important;
+}
+
+.header div ul li :hover{
+    color: #FE5F55 !important;
+    text-decoration: underline !important;
+}
+
+.header-brand{
+    display: flex;
+}
+
+.header-brand > a{
+    display: flex;
+    text-decoration: none;
+}
+
+.img-brand{
+    max-height: 80px;
+    aspect-ratio: 1.5/1;
+}
+
+.navbar-collapse{
+    display: flex;
+    flex-basis: auto;
+}
+
+.navbar-collapse li{
+    border-radius: 20px !important;
+    border: 1px solid #2B2B2B;
+}
+
+.navbar-collapse a{
+    color: #2B2B2B !important;
+}
+
+.navbar-collapse .navbar-nav li:hover{
+    border-color: #FE5F55;
+}
+
+.navbar-collapse .navbar-nav a:hover{
+    color: #FE5F55 !important;
+    text-decoration: underline !important;
+}
+
+.navbar-brand{
+    float: left;
+    text-align: left;
+    font-family: cera-round-pro, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xxx-large;
+    align-self: center;
+    padding-left: 5% !important;
+    color: #FE5F55 !important;
+}
+
+
+.navbar-nav{
+    list-style: none;
+    float: right;
+    margin-left: auto;
+    text-align: right;
+    padding: 0;
+}
+
+.nav-item{
+    margin: 10px 10px !important;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 992px){
+    .container{
+        flex-direction: column;
+    }
+
+    .navbar-collapse ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 0;
+        list-style: none;
+        padding-top: 3%;
+    }
+
+    .navbar-collapse ul li{
+        text-align: center;
+        width: auto;
+    }
+
+    .navbar-nav .nav-link{
+        padding-left: 3% !important;
+        padding-right: 3% !important;
+    }
+
+}

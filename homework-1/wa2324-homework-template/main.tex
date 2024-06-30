@@ -1,0 +1,45 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstdefinestyle{jsonStyle}{
+    backgroundcolor=\color{white},
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    captionpos=b,
+    commentstyle=\color{gray},
+    keywordstyle=\color{blue},
+    stringstyle=\color{red},
+    frame=single,
+    numbersep=5pt,
+    numberstyle=\tiny\color{gray},
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    language=
+}
+
+\input{local_macros}
+
+\begin{document}
+\maketitle
+
+\input{sections/Objectives}
+\input{sections/MainFunctionalities}
+
+
+\input{sections/DataLogicLayer}
+
+\newpage
+\input{sections/PresentationLogicLayer}
+
+
+\newpage
+\input{sections/BusinessLogicLayer}
+
+
+\input{sections/Contributions}
+
+\end{document}

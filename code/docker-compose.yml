@@ -1,0 +1,59 @@
+# Docker Composer
+
+services:
+  tomcat:
+    image: tomcat:latest
+    ports:
+      - "8080:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./target/HW1-1.0:/usr/local/tomcat/webapps/HW1-1.0
+      - ./target/HW1-1.0/META-INF/context.xml:/usr/local/tomcat/conf/context.xml
+    environment:
+      # Set any necessary environment variables for Tomcat here
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_NAME=rentcar
+      - DB_USER=postgres
+      - DB_PASSWORD=elnaz
+    networks:
+      - app-network
+
+  db:
+    image: postgres:latest # Specify the latest version of PostgreSQL
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=elnaz
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=rentcar # Ensure a default database is created
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 10s
+      retries: 50
+
+    networks:
+      - app-network
+  dbsetup:
+    image: postgres:latest
+    depends_on:
+      - db
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+      - ./init-db:/docker-entrypoint-initdb.d
+    restart: "no"
+    environment:
+      PGPASSWORD: "elnaz"
+    entrypoint: ["bash", "-c", "/docker-entrypoint-initdb.d/script.sh" ]
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge # Use the bridge driver for the network
+

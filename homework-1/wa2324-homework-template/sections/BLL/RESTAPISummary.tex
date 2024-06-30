@@ -1,0 +1,41 @@
+\subsection{REST API Summary}
+
+%describe the REST API. If needed, add a few lines of text here, describing the content of the table.
+We used postman REST client to test and debug our REST API. here we share list of routes and a documentation with other developers: 
+
+\begin{longtable}{|p{.225\columnwidth}|p{.1\columnwidth} |p{.30\columnwidth}|p{.30\columnwidth}|} 
+\hline
+\textbf{URI} & \textbf{Method} & \textbf{Description} & \textbf{Filter} \\\hline
+
+/rest/car & GET &  get the list of cars & no \\\hline
+
+/rest/car & POST &  make a new car record & no \\\hline
+
+/rest/car/\{licenseplate\} & GET &  get a car by its license plate & filters cars by license plate \\\hline
+
+/create-car & POST &  make a new car record & no \\\hline
+
+/update-car & POST &  update a car record & no \\\hline
+
+/search-car & GET &  get the list of cars & can filter with cars parameters \\\hline
+
+/create-customer & POST &  Registering a new customer & no \\\hline
+
+/edit-customer & POST &  Registering a new customer & no \\\hline
+
+/login & POST &  Login a customer & no \\\hline
+
+/create-licence & POST &  Creating a new Licence & no \\\hline
+
+/edit-licence & POST &  update a car record & no \\\hline
+
+/add-transaction & POST &  create a payment transaction & no \\\hline
+
+/remove-transaction & POST &  remove a payment transaction & no \\\hline
+
+/update-transaction & POST &  remove a payment transaction & no \\\hline
+
+
+\caption{Describe in this table your REST API}
+\label{tab:termGlossary}
+\end{longtable}

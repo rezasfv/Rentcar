@@ -1,0 +1,18 @@
+<!-- WHAT TO DO NEXT -->
+1.Implement the last "entity" classes with ALL the DAO and functionality.
+	-Customer (DONE) : Add, Remove, Update (maybe).
+	-Driver Licence (DONE) : Add, Remove, Update (maybe).
+	-Car (DONE).
+		TO REMOVE!! Employee (TO DO) : Add, Remove, Update (maybe).
+		TO REMOVE!! Card (DONE) : Add, Remove, Update (maybe).
+	-Rental Transactions (DONE) : Add, Remove, Update (maybe).
+
+2.Implement the "reletion" classes as SEARCH functions
+	-Hold License (TO DO) : New (Remove + Add), Update (maybe), See.
+		TO REMOVE!! Manage (TO DO) : Add, Remove, Update, See.
+	-Reserve (TO DO) : SeeByCustomer, SeeByCar (maybe), Add, Update (maybe), UndoReservation (Remove).
+		TO REMOVE!! Payment Method (TO DO) : Add, Remove (if UndoReservation is implemented), See.
+
+	-Can we keep obsolete datas? Or we need to update them?
+
+3. Implement JSB for all the classes.

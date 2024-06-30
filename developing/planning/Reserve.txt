@@ -1,0 +1,30 @@
+<!-- METHODS TO IMPLEMENT -->
+-Method that checks if a reservation is ended or expired:
+	1. Get the date of today using the Java library (time or something like that).
+	2. Get access to rental transaction table and pick up all the rows that have to_date value that is lesser
+		than the date of today (... where to_date < date_of_today).
+	3. Pick up only the reservation transaction ID for all the elements.
+	4. Get access to reserve table and get all the reserve rows that have the value of point 3.
+	5. Pick up only the car_id for all the elements.
+	6. Get access to car table and do an update ONLY on the element that have car_status = "reserve" and value
+		of the car_id equal to one of the element in point 4.
+
+-Method that checks if a driver licence is expired. When a user is going to do a reservation do (like when he/she
+	clicks to "reserve" button or "confirm" button):
+	1. Get the user id that is gonna do the reservation.
+	2. Access to the driver licence table using the id and get the expiration_date value.
+	3. Get the date of today.
+	4. Do a comparison between the expiration_date and the date_of_today and if the card is expired print a 
+		message that says "Driver licence expired. Please provide a new one". And then a button or a link
+		to allow the user to update his/her driver licence.
+
+-Method that allows the user to undo a reservation. The user has a list of all active reservation:
+	1. Get the date of today.
+	2. Get the user_id and the rental_transaction_id (the user select it).
+	3. Get the from_date from the rental_transaction and compare it to the date_of_today.
+	4. If the from_date is "in the future" than go to point 6, if not print an error message.
+	5. Do a remove operation and print a message.
+
+-Method that checks the validity of the values BEFORE calling the DAO methods.
+
+	

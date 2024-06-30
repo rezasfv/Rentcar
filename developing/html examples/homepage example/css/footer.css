@@ -1,0 +1,88 @@
+/**
+    * Footer styling
+    *
+    * @authpr: Francesco Chemello
+    * @version: 1.0
+    * @since: 1.0
+*/
+
+/* Display */
+
+.footer-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid orange;
+}
+
+.footer-message{
+    text-align: center;
+    border: 5px solid blue;
+}
+
+.footer-sitemap{
+    border: 5px solid pink;
+}
+
+.footer__text {
+    text-align: center;
+    order: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer__map__text {
+    text-align: center;
+    order: 1;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 5px red;
+}
+
+.footer__sitemap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__item{
+    width: 100%;
+    border: solid 5px green;
+}
+
+.footer__item ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer__item ul li {
+    flex: 0 0 auto;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.footer__sitemap a {
+    flex: 0 0 auto;
+}
+
+/* Style */
+/*TODO*/
+
+
+/* Media Query */
+
+@media screen and (max-width: 768px){
+    .footer__item ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }   
+
+    .footer__item ul li {
+        width: 50%;
+    }
+}

@@ -1,0 +1,22 @@
+/**
+ * Automatic slideshow
+ * Change every 5 seconds
+ * 
+ * @author Francesco Chemello
+ * @version 1.0
+ * @since 1.0
+ */
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image timer
+}

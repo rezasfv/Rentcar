@@ -1,0 +1,20 @@
+\subsection{Class Diagram}
+
+\includegraphics[width=500, height=350]{wa2324-homework-template/FinalClassDiagam.png}
+
+%Describe here the class diagram of your project
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{|p{3cm}|p{10cm}|}
+    \hline
+    \textbf{Component} & \textbf{Description} \\
+    \hline
+    DAO & Data Access Objects (e.g., `AddRentalTransactionDAO`, `AdminLoginDAO`) facilitate interactions with data storage, enabling seamless data retrieval and manipulation for rental transactions, user authentication, and vehicle listings. \\
+    REST & RESTful resources (e.g., `AbstractRR`, `CreateCarRR`) serve as API endpoints, defining and handling incoming requests to provide functionalities such as creating cars and listing available vehicles. \\
+    Service Layer & Classes (e.g., `Admin`, `Car`, `RentalTransaction`) encapsulate business logic for administrative tasks, vehicle management, and rental transactions, facilitating efficient operation of the application. \\
+    Servlets & Servlets (e.g., `AdminLoginServlet`, `CreateCarServlet`) handle HTTP requests and responses, serving as entry points for processing user interactions and orchestrating communication between the client and server. \\
+    \hline
+    \end{tabular}
+    \caption{Class Diagram Components}
+    \label{tab:class-diagram}
+\end{table}
